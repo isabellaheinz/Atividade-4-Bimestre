@@ -14,42 +14,42 @@ $anos = readline("Quantos anos você tem?");
 
 if ($anos > 10 && $anos < 25) {
 
-    $pontuacao = 5;
+    $pontuacao += 5;
 }
 else if($anos > 25 && $anos < 50){
 
-    $pontuacao = 10;
+    $pontuacao += 10;
 }
 
 else if ($anos > 50 && $anos < 10){
     
-    $pontuacao = 15;
+    $pontuacao += 15;
 }
 
 $GostarSorvete = readline("De 0 à 10, o quanto você gosta de sorvete? ");
 
 if ($GostarSorvete >= 0 && $GostarSorvete < 3){
 
-    $pontuacao = 5;
+    $pontuacao += 5;
 }
 else if($GostarSorvete > 3 && $GostarSorvete < 6){
 
-    $pontuacao = 10;
+    $pontuacao += 10;
 }
 
 else if ($GostarSorvete > 6 && $GostarSorvete <= 10){
     
-    $pontuacao = 15;
+    $pontuacao += 15;
 }
 
 
 $GirlBoy = readline("Você é homem ou mulher? 1 para mulher, 2 para homem.");
 
 if($GirlBoy == 1){
-    $pontuacao = 10;
+    $pontuacao += 10;
 
 } else {
-    $pontuacao = 15;
+    $pontuacao += 15;
 }
 
 if ($pontuacao > 40){
@@ -68,4 +68,3 @@ else if ($pontuacao > 30 && $pontuacao <= 40){
 }
 
 print "Muito obrigada por testar o Napolitometro!";
-print"$pontuacao";
